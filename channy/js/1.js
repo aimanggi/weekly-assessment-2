@@ -15,7 +15,7 @@
 */
 
 const points = (a, b) => {
-  // Write your code here
+  // Write your code here(C)
   return a * 2 + b * 3;
 };
 

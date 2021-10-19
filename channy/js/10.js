@@ -23,7 +23,7 @@ const findLongest = (arr) => {
 };
 
 const playground10 = () => {
-  // Put your sentence here
+  // Put your sentence here(CL)
   // CL
   const sentence = "Hello from the othe side";
   const res = findLongest(sentence) || "No Result";

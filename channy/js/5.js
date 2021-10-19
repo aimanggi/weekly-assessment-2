@@ -18,7 +18,7 @@
 */
 
 const seriesResistance = (arr) => {
-  // Write your code here
+  // Write your code here(N)
   let sum = parseFloat(arr[0]);
 
   for (let i = 0; i < arr.length - 1; i++) {

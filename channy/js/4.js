@@ -18,7 +18,7 @@
 */
 
 const lonelyInteger = (arr) => {
-  // Write your code here
+  // Write your code here(N)
 
   let lonely = [];
   for (let i = 0; i < arr.length; i++) {

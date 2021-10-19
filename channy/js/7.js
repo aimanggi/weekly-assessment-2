@@ -21,7 +21,8 @@
 */
 
 const removeLeadingTrailing = (num) => {
-  // Write your code here
+  // Write your code here(L)
+
   let numberWOLeadingTrailing = parseFloat(num);
   let stringn = numberWOLeadingTrailing.toString();
   return stringn;

@@ -13,7 +13,7 @@
 */
 
 const minMax = (arr) => {
-  // Write your code here
+  // Write your code here(A)
 
   let min = arr[0];
   let max = arr[0];
