@@ -30,7 +30,7 @@ const playground4 = () => {
 };
 
 const checkResult4 = () => {
-  const test1 = lonelyInteger([1, -1, 2, -2, 3]) === -3;
+  const test1 = lonelyInteger([1, -1, 2, -2, 3]) === 3;
   const test2 = lonelyInteger([-3, 1, 2, 3, -1, -4, -2]) === -4;
   const test3 = lonelyInteger([-9, -105, -9, -9, -9, -9, 105]) === -9;
 

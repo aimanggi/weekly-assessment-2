@@ -26,7 +26,7 @@ const playground2 = () => {
 const checkResult2 = () => {
   const test1 = _.isEqual(reverse([1, 2, 3, 4]), [4, 3, 2, 1]);
   const test2 = _.isEqual(reverse([9, 9, 2, 3, 4]), [4, 3, 2, 9, 9]);
-  const test3 = _.isEqual([reverse([])], []);
+  const test3 = _.isEqual(reverse([]), []);
 
   document.getElementById("score-result-2").innerHTML = `<div>
     <div>Test 1 = ${test1}</div>
