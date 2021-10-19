@@ -1,5 +1,5 @@
 // 7 POINTS
-
+// M
 /*
   Write a function that takes in a string and for each character, returns the distance to the nearest vowel in the string. 
   If the character is a vowel itself, return 0.
@@ -20,6 +20,7 @@ const distanceToNearestVowel = (arr) => {
 
 const playground9 = () => {
   // Put your word here
+  // M
   const word = "abcde";
   const res = distanceToNearestVowel(word) || "No Result";
 

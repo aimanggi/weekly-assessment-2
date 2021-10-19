@@ -1,5 +1,5 @@
 // 4 POINTS
-
+// L
 /*
  Create a function that takes in a number as a string n and returns the number without trailing and leading zeros.
 
@@ -29,6 +29,7 @@ const removeLeadingTrailing = (num) => {
 
 const playground7 = () => {
   // Put your number here
+  // L
   const res = removeLeadingTrailing("23.00") || "No Result";
 
   document.getElementById("test-result-7").innerHTML = res;

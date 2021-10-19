@@ -1,5 +1,5 @@
 // 4 POINTS
-
+// CL
 /*
  Write a recursive function that will return the longest word in a sentence. 
  In cases where more than one word is found, return the first one.
@@ -24,6 +24,7 @@ const findLongest = (arr) => {
 
 const playground10 = () => {
   // Put your sentence here
+  // CL
   const sentence = "Hello from the othe side";
   const res = findLongest(sentence) || "No Result";
 

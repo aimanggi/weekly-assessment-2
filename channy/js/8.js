@@ -1,5 +1,5 @@
 // 4 POINTS
-
+// I
 /*
  Write a function that does the following for the given values: add, subtract, divide and multiply. 
  This is simply referred to as the basic arithmetic operations. 
@@ -43,6 +43,7 @@ const operation = (num1, num2, operator) => {
 
 const playground8 = () => {
   // Put your example here
+  // I
   const res = operation("2", "3", "add") || "No Result";
 
   document.getElementById("test-result-8").innerHTML = res;
