@@ -15,6 +15,7 @@
 
 const sortByLength = (arr) => {
   // Write your code here
+  return arr.sort((a, b) => a.length - b.length);
 };
 
 const playground6 = () => {

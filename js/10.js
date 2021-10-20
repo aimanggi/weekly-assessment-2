@@ -20,6 +20,7 @@
 
 const findLongest = (arr) => {
   // Write your code here
+  return arr.split(/[^A-Za-z]/).reduce((a, b) => a.length > b.length ? a : b).toLowerCase();
 };
 
 const playground10 = () => {

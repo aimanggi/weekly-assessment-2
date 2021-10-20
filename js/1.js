@@ -16,12 +16,12 @@
 
 const points = (a, b) => {
   // Write your code here
+  return a * 2 + b * 3;
 };
 
 const playground1 = () => {
   // Put your score here
-  const score = points(2, 3) || "No Result";
-
+  const score = points(3, 10);
   document.getElementById("test-result").innerHTML = score;
 };
 

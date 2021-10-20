@@ -21,12 +21,13 @@
 */
 
 const removeLeadingTrailing = (arr) => {
-  // Write your code here
+  // Write your code here\
+  return parseFloat(arr).toString();
 };
 
 const playground7 = () => {
   // Put your number here
-  const res = removeLeadingTrailing("23.00") || "No Result";
+  const res = removeLeadingTrailing("00402") || "No Result";
 
   document.getElementById("test-result-7").innerHTML = res;
 };

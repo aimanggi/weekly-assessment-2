@@ -14,6 +14,7 @@
 
 const minMax = (arr) => {
   // Write your code here
+  return [Math.min(...arr), Math.max(...arr)];
 };
 
 const playground3 = () => {

@@ -19,6 +19,7 @@
 
 const lonelyInteger = (arr) => {
   // Write your code here
+  return [...new Set(arr.filter(x => !arr.includes(-x)))][0];
 };
 
 const playground4 = () => {
