@@ -19,6 +19,7 @@
 
 const lonelyInteger = (arr) => {
   // Write your code here
+  return arr.filter((x) => !arr.includes(-x)).pop();
 };
 
 const playground4 = () => {

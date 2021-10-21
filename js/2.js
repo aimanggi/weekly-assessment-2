@@ -13,6 +13,7 @@
 
 const reverse = (arr) => {
   // Write your code here
+  return arr.reverse()
 };
 
 const playground2 = () => {
