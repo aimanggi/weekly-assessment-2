@@ -22,6 +22,7 @@
 
 const removeLeadingTrailing = (arr) => {
   // Write your code here
+  return Number(arr).toString();
 };
 
 const playground7 = () => {
@@ -42,10 +43,6 @@ const checkResult7 = () => {
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
     <div>Test 4 = ${test4}</div>
-    ${
-      test1 && test2 && test3 && test4
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 && test4 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

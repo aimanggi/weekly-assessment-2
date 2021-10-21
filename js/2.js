@@ -13,6 +13,7 @@
 
 const reverse = (arr) => {
   // Write your code here
+  return arr.reverse();
 };
 
 const playground2 = () => {
@@ -32,10 +33,6 @@ const checkResult2 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

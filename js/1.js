@@ -16,6 +16,9 @@
 
 const points = (a, b) => {
   // Write your code here
+  let twos = 2 * a;
+  let threes = 3 * b;
+  return twos + threes;
 };
 
 const playground1 = () => {
@@ -41,10 +44,6 @@ const checkResult1 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

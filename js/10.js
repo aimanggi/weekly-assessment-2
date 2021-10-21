@@ -20,6 +20,11 @@
 
 const findLongest = (arr) => {
   // Write your code here
+  return arr
+    .toLowerCase()
+    .replace(/[^a-z ]/, " ")
+    .split(" ")
+    .sort((a, b) => b.length - a.length)[0];
 };
 
 const playground10 = () => {
@@ -31,24 +36,15 @@ const playground10 = () => {
 };
 
 const checkResult10 = () => {
-  const test1 =
-    findLongest(
-      "I will and ever will be gratefully and perpetually loving you Tesh!😘"
-    ) === "perpetually";
-  const test2 =
-    findLongest("A thing of beauty is a joy forever.") === "forever";
-  const test3 =
-    findLongest("Forgetfulness is by all means powerless!") === "forgetfulness";
+  const test1 = findLongest("I will and ever will be gratefully and perpetually loving you Tesh!😘") === "perpetually";
+  const test2 = findLongest("A thing of beauty is a joy forever.") === "forever";
+  const test3 = findLongest("Forgetfulness is by all means powerless!") === "forgetfulness";
 
   document.getElementById("score-result-10").innerHTML = `<div>
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
 
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

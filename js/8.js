@@ -15,8 +15,18 @@
 
 */
 
-const operation = (arr) => {
+const operation = (n1, n2, oper) => {
   // Write your code here
+  const operations = {
+    add: "+",
+    subtract: "-",
+    divide: "/",
+    multiply: "*",
+  };
+
+  if (oper === "divide" && n2 === "0");
+
+  return eval(n1 + operations[oper] + n2);
 };
 
 const playground8 = () => {
@@ -35,10 +45,6 @@ const checkResult8 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

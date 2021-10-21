@@ -14,6 +14,12 @@
 
 const minMax = (arr) => {
   // Write your code here
+  var min = (max = arr[0]);
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > max) max = arr[i];
+    if (arr[i] < min) min = arr[i];
+  }
+  return [min, max];
 };
 
 const playground3 = () => {
@@ -33,10 +39,6 @@ const checkResult3 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

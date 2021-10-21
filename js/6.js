@@ -15,6 +15,7 @@
 
 const sortByLength = (arr) => {
   // Write your code here
+  return arr.sort((a, b) => a.length - b.length);
 };
 
 const playground6 = () => {
@@ -26,30 +27,14 @@ const playground6 = () => {
 };
 
 const checkResult6 = () => {
-  const test1 = _.isEqual(sortByLength(["a", "ccc", "dddd", "bb"]), [
-    "a",
-    "bb",
-    "ccc",
-    "dddd",
-  ]);
-  const test2 = _.isEqual(sortByLength(["apple", "pie", "shortcake"]), [
-    "pie",
-    "apple",
-    "shortcake",
-  ]);
-  const test3 = _.isEqual(
-    sortByLength(["may", "april", "september", "august"]),
-    ["may", "april", "august", "september"]
-  );
+  const test1 = _.isEqual(sortByLength(["a", "ccc", "dddd", "bb"]), ["a", "bb", "ccc", "dddd"]);
+  const test2 = _.isEqual(sortByLength(["apple", "pie", "shortcake"]), ["pie", "apple", "shortcake"]);
+  const test3 = _.isEqual(sortByLength(["may", "april", "september", "august"]), ["may", "april", "august", "september"]);
 
   document.getElementById("score-result-6").innerHTML = `<div>
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };
