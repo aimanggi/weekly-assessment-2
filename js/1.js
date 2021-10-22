@@ -16,6 +16,7 @@
 
 const points = (a, b) => {
   // Write your code here
+  return a * 2 + b * 3;
 };
 
 const playground1 = () => {

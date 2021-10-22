@@ -19,6 +19,16 @@
 
 const seriesResistance = (arr) => {
   // Write your code here
+  let sum = parseFloat(arr[0]);
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    sum = parseFloat(sum) + parseFloat(arr[i + 1]);
+  }
+  if (sum === 1) {
+    return `${parseFloat(sum).toFixed(1)} ohm`;
+  } else if (sum > 1) {
+    return `${parseFloat(sum)} ohms`;
+  }
 };
 
 const playground5 = () => {

@@ -16,9 +16,11 @@
 */
 
 const operation = (arr) => {
-  // Write your code here
-};
-
+ 
+    // Write your code here
+   
+  };
+  
 const playground8 = () => {
   // Put your example here
   const res = operation("2", "3", "add") || "No Result";

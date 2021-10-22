@@ -14,6 +14,12 @@
 
 const minMax = (arr) => {
   // Write your code here
+  var min = (max = arr[0]);
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > max) max = arr[i];
+    if (arr[i] < min) min = arr[i];
+  }
+  return [min, max];
 };
 
 const playground3 = () => {

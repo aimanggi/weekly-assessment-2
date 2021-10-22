@@ -22,6 +22,7 @@
 
 const removeLeadingTrailing = (arr) => {
   // Write your code here
+  return Number(arr).toString();
 };
 
 const playground7 = () => {
