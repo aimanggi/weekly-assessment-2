@@ -19,8 +19,15 @@
 
 const seriesResistance = (arr) => {
   // Write your code here
+  let result = arr.reduce((a, b) => {
+    return(a + b)
+  })
+  return result > 1 ? `${result} ohms` : `${result.toFixed(1)} ohm`;
 };
 
+// console.log(seriesResistance([1, 5, 6, 3]))
+// console.log(seriesResistance([16, 3.5, 6]))
+// console.log(seriesResistance([0.5, 0.5]))
 const playground5 = () => {
   // Put your array here
   const arr = [1, 5, 6, 3];

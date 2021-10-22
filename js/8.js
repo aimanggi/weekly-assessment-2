@@ -15,8 +15,21 @@
 
 */
 
-const operation = (arr) => {
+const operation = (number1, number2, command) => {
   // Write your code here
+  // switch (command){
+  //   case "add" : 
+  //   return parseInt(number1)+parseInt(number2)
+
+  //   case "subtract" :
+  //   return parseInt(number1)-parseInt(number2)
+
+  //   case "divide" :
+  //   return parseInt(number1)/parseInt(number2)
+  // }
+  return command === "add" ? parseInt(number1)+parseInt(number2) : 
+  command === "subtract" ? parseInt(number1)-parseInt(number2) :
+  parseInt(number1)/parseInt(number2)
 };
 
 const playground8 = () => {
