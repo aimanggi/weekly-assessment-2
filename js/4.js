@@ -18,6 +18,13 @@
 */
 
 const lonelyInteger = (arr) => {
+  let lonely = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!arr.includes(arr[i] * -1)) {
+      lonely.push(arr[i]);
+    }
+  }
+  return lonely[0];
   // Write your code here
 };
 
@@ -38,10 +45,6 @@ const checkResult4 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };
