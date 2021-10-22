@@ -17,8 +17,9 @@
   lonelyInteger([-9, -105, -9, -9, -9, -9, 105]) ➞ -9
 */
 
-const lonelyInteger = (arr) => {
+const lonelyInteger = arr => {
   // Write your code here
+  return arr.filter(x => !arr.includes(-x)).pop();
 };
 
 const playground4 = () => {
@@ -38,10 +39,6 @@ const checkResult4 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

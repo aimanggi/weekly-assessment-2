@@ -17,8 +17,12 @@
 
 */
 
-const seriesResistance = (arr) => {
+const seriesResistance = arr => {
   // Write your code here
+  let result = arr.reduce((acc, currVal) => {
+    return acc + currVal;
+  }, 0);
+  return `${result} ohms`;
 };
 
 const playground5 = () => {
@@ -38,10 +42,6 @@ const checkResult5 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };

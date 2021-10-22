@@ -11,13 +11,19 @@
   reverse([]) ➞ []
 */
 
-const reverse = (arr) => {
+const reverse = arr => {
   // Write your code here
+  let newArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    newArr.push(arr[i]);
+  }
+  return newArr;
 };
 
 const playground2 = () => {
   // Put your array here
-  const arr = [1, 2, 3, 4];
+  // const arr = [1, 2, 3, 4];
+  const arr = [5, 6, 7, 9];
   const res = reverse(arr) || "No Result";
 
   document.getElementById("test-result-2").innerHTML = res;
@@ -32,10 +38,6 @@ const checkResult2 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };
