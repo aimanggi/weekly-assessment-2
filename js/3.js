@@ -14,11 +14,12 @@
 
 const minMax = (arr) => {
   // Write your code here
+  return [Math.min(...arr), Math.max(...arr)];
 };
 
 const playground3 = () => {
   // Put your array here
-  const arr = [1, 2, 3, 4];
+  const arr = [3, 1, 4, 2];
   const res = minMax(arr) || "No Result";
 
   document.getElementById("test-result-3").innerHTML = res;

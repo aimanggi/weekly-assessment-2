@@ -19,6 +19,7 @@
 
 const seriesResistance = (arr) => {
   // Write your code here
+  
 };
 
 const playground5 = () => {
