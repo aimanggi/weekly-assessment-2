@@ -18,14 +18,28 @@
   findLongest("Forgetfulness is by all means powerless!") ➞ "forgetfulness"
 */
 
-const findLongest = (arr) => {
-  // Write your code here
+const findLongest = (sentence, word) => {
+  // This question should using recursive method
+
+  const cleanSentence = sentence.toLowerCase().replace(/[^a-z ]/, "");
+
+  var wordsList = cleanSentence.split(" ");
+  var lastWord = wordsList.pop();
+  var longestWord = lastWord.length > word.length ? lastWord : word;
+  if (cleanSentence.length > 0) {
+    var newSentence = wordsList.join(" ");
+    // it will call same function again until all the word checked
+    return findLongest(newSentence, longestWord);
+  } else {
+    return longestWord;
+  }
 };
 
 const playground10 = () => {
   // Put your sentence here
-  const sentence = "Hello from the othe side";
-  const res = findLongest(sentence) || "No Result";
+  const sentence =
+    "I will and ever will be gratefully and perpetually loving you Tesh!😘";
+  const res = findLongest(sentence, "") || "No Result";
 
   document.getElementById("test-result-10").innerHTML = res;
 };
@@ -33,12 +47,14 @@ const playground10 = () => {
 const checkResult10 = () => {
   const test1 =
     findLongest(
-      "I will and ever will be gratefully and perpetually loving you Tesh!😘"
+      "I will and ever will be gratefully and perpetually loving you Tesh!😘",
+      ""
     ) === "perpetually";
   const test2 =
-    findLongest("A thing of beauty is a joy forever.") === "forever";
+    findLongest("A thing of beauty is a joy forever.", "") === "forever";
   const test3 =
-    findLongest("Forgetfulness is by all means powerless!") === "forgetfulness";
+    findLongest("Forgetfulness is by all means powerless!", "") ===
+    "forgetfulness";
 
   document.getElementById("score-result-10").innerHTML = `<div>
     <div>Test 1 = ${test1}</div>
