@@ -15,16 +15,19 @@
 */
 
 const points = (a, b) => {
+<<<<<<< HEAD
   // Write your code here
+=======
+>>>>>>> 0210ae3825243add0d4c98bccddf722f17a22f9d
   return a * 2 + b * 3;
 };
 
-const playground1 = () => {
+function playground1() {
   // Put your score here
   const score = points(2, 3) || "No Result";
 
   document.getElementById("test-result").innerHTML = score;
-};
+}
 
 const checkResult1 = () => {
   /*
@@ -42,10 +45,6 @@ const checkResult1 = () => {
     <div>Test 1 = ${test1}</div>
     <div>Test 2 = ${test2}</div>
     <div>Test 3 = ${test3}</div>
-    ${
-      test1 && test2 && test3
-        ? `<div class="correct">Well done, all tests are correct!</div>`
-        : ""
-    }
+    ${test1 && test2 && test3 ? `<div class="correct">Well done, all tests are correct!</div>` : ""}
   </div>`;
 };
